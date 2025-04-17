@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+
 public class SessionAdapter extends ArrayAdapter<Session> {
 
     public SessionAdapter(Context context, List<Session> sessions) {
