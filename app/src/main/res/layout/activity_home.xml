@@ -7,6 +7,4 @@
     android:padding="24dp"
     android:gravity="center">
 
-    <!-- Your other views for session list etc. -->
-
 </LinearLayout>
