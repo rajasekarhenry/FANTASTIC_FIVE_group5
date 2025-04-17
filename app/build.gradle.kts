@@ -37,10 +37,8 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // ✅ Use stable Realm Java SDK (not Kotlin plugin)
     implementation("io.realm:realm-android-library:10.10.1")
 
-    // ✅ Gson for JSON parsing
     implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation(libs.junit)
