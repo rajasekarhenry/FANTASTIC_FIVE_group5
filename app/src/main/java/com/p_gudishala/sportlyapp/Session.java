@@ -1,9 +1,7 @@
 package com.p_gudishala.sportlyapp;
 
 import com.google.gson.annotations.SerializedName;
-
 import java.util.List;
-
 import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;

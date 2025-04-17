@@ -47,8 +47,34 @@ public class HomeActivity extends AppCompatActivity {
                 dodgeballParticipants
         );
 
+        // Add more sports
+        RealmList<Participant> volleyballParticipants = new RealmList<>();
+        volleyballParticipants.addAll(Arrays.asList(new Participant(), new Participant(), new Participant(), new Participant()));
+
+        Session volleyball = new Session(
+                112233,
+                "Volleyball",
+                "Gym 1",
+                System.currentTimeMillis(),
+                volleyballParticipants
+        );
+
+        RealmList<Participant> badmintonParticipants = new RealmList<>();
+        badmintonParticipants.addAll(Arrays.asList(new Participant(), new Participant()));
+
+        Session badminton = new Session(
+                998877,
+                "Badminton",
+                "Gym 2",
+                System.currentTimeMillis(),
+                badmintonParticipants
+        );
+
+        // Add all sessions to the list
         sessions.add(basketball);
         sessions.add(dodgeball);
+        sessions.add(volleyball);
+        sessions.add(badminton);
 
         SessionAdapter adapter = new SessionAdapter(this, sessions);
         sessionList.setAdapter(adapter);
