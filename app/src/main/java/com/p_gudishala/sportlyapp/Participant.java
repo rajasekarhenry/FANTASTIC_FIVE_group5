@@ -1,7 +1,6 @@
 package com.p_gudishala.sportlyapp;
 
 import com.google.gson.annotations.SerializedName;
-
 import io.realm.RealmObject;
 
 public class Participant extends RealmObject {
@@ -21,7 +20,6 @@ public class Participant extends RealmObject {
     @SerializedName("session_id")
     private long sessionId;
 
-    // Required no-argument constructor for Realm
     public Participant() {}
 
     public Participant(String firstName, String lastName, String phoneNumber, int memberNumber, long sessionId) {
