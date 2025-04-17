@@ -14,14 +14,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Create a new TextView programmatically to display the welcome message
         welcomeHomeText = new TextView(this);
         welcomeHomeText.setText("Welcome to Home Page");
         welcomeHomeText.setTextSize(24); // Set font size
         welcomeHomeText.setTextColor(getResources().getColor(android.R.color.black));
         welcomeHomeText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-
-        // Find the parent layout (assuming it's a LinearLayout) and add the TextView
+        
         LinearLayout layout = findViewById(R.id.home_layout);
         layout.addView(welcomeHomeText);
     }
